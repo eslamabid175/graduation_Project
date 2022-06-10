@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1071264104606",
+    "project_id": "my-e-commerce-d0b9b",
+    "storage_bucket": "my-e-commerce-d0b9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071264104606:android:ed004455936ec3c05d7b8f",
+        "android_client_info": {
+          "package_name": "com.eslam.mye_commerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071264104606-djqmeo3gnffdlqg9l15qp98hpjaplivl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWXxH7J3KKcIodHejHEJKfOGgJvOkXnjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071264104606-djqmeo3gnffdlqg9l15qp98hpjaplivl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
