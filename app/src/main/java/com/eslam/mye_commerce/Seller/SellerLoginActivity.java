@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.Seller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.eslam.mye_commerce.databinding.ActivitySellerLoginBinding;
-import com.eslam.mye_commerce.databinding.ActivitySellerRegisterBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -57,7 +56,7 @@ auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnComp
 
        Toast.makeText(SellerLoginActivity.this, "U r Login Succsfully", Toast.LENGTH_SHORT).show();
 lodingbr.dismiss();
-       Intent intent = new Intent(SellerLoginActivity.this,SellerHomeActivity.class);
+       Intent intent = new Intent(SellerLoginActivity.this, SellerHomeActivity.class);
        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
        startActivity(intent);
        finish();

@@ -11,6 +11,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.eslam.mye_commerce.Seller.SellerHomeActivity;
+import com.eslam.mye_commerce.Seller.SellerRegisterActivity;
 import com.eslam.mye_commerce.loginandjoin.LoginActivity;
 import com.eslam.mye_commerce.loginandjoin.RegisterActivity;
 import com.eslam.mye_commerce.loginandjoin.prevelant.Prevelant;

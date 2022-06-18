@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.Seller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,8 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.eslam.mye_commerce.Model.Products;
+import com.eslam.mye_commerce.User.ProductDetailsActivity;
+import com.eslam.mye_commerce.R;
 import com.eslam.mye_commerce.ViewHolder.ProductViewHolder;
-import com.eslam.mye_commerce.databinding.ActivityAdminsNewOrdersBinding;
 import com.eslam.mye_commerce.databinding.ActivitySearchProductsBinding;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;

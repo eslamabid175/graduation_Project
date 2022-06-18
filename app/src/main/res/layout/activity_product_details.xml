@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductDetailsActivity">
+    tools:context=".User.ProductDetailsActivity">
 
     <ImageView
 
 
         android:id="@+id/product_details_image"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="280dp"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -54,11 +54,14 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/l1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/product_price"
-        android:layout_marginTop="10dp"
-        android:background="@color/Colorrprimary"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -92,6 +95,38 @@
 
             app:tint="@color/white" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/addtocrt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/l1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:text="add To Cart"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/buy_now_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/addtocrt_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:text="Buy Now"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_to_cart_btn"

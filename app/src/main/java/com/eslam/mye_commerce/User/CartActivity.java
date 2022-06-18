@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.User;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,7 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.eslam.mye_commerce.HomeActivity;
 import com.eslam.mye_commerce.Model.Cart;
+import com.eslam.mye_commerce.R;
 import com.eslam.mye_commerce.ViewHolder.CartViewHolder;
 import com.eslam.mye_commerce.databinding.ActivityCartBinding;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -59,7 +61,8 @@ public class CartActivity extends AppCompatActivity {
                 finish();
             }
         });
-        binding.totalPrice.setText("Total Price = " + String.valueOf(overTotalPrice) + " $");
+//        String s=getIntent().getStringExtra("Total Price");
+//        binding.totalPrice.setText("Total Price = " + String.valueOf(s) + " $");
 
     }
 
@@ -164,18 +167,20 @@ public class CartActivity extends AppCompatActivity {
                         binding.cartList.setVisibility(View.GONE);
 
                         binding.msg1.setVisibility(View.VISIBLE);
+                        binding.totalPrice.setText("Shipping State = Shipped");
                         binding.msg1.setText("Congratulations, your final order has been Shipped successfully. Soon you will received your order at your door step.");
                         binding.nextBtn.setVisibility(View.GONE);
 
                         Toast.makeText(CartActivity.this, "you can purchase more products, once you received your first final order.", Toast.LENGTH_SHORT).show();
                     } else if (shippingState.equals("not shipped")) {
                         binding.totalPrice.setText("Shipping State = Not Shipped");
-                        binding.cartList.setVisibility(View.GONE);
+                        binding.cartList.setVisibility(View.VISIBLE);
+                        binding.msg1.setText("Products Not Shipped yet");
 
                         binding.msg1.setVisibility(View.VISIBLE);
                         binding.nextBtn.setVisibility(View.GONE);
 
-                        Toast.makeText(CartActivity.this, "you can purchase more products, once you received your first final order.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CartActivity.this, " products not shipped yet, once you received your first final order.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

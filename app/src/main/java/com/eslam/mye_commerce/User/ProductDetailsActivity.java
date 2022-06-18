@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.User;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.eslam.mye_commerce.HomeActivity;
 import com.eslam.mye_commerce.Model.Products;
 import com.eslam.mye_commerce.databinding.ActivityProductDetailsBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -48,10 +49,24 @@ public class ProductDetailsActivity extends AppCompatActivity {
                 }
             }
         });
+        binding.addtocrtBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addingtocartlist();
+            }
+        });
         binding.addToCartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 addingtocartlist();
+            }
+        });
+
+        binding.buyNowBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+Intent intent=new Intent(ProductDetailsActivity.this, PaymentActivity.class);
+startActivity(intent);
             }
         });
         binding.removeItem.setOnClickListener(new View.OnClickListener() {

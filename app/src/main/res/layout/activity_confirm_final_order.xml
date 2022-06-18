@@ -3,13 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfirmFinalOrderActivity">
+    tools:context=".User.ConfirmFinalOrderActivity">
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/ColorrprimarydArk">
+
+        <TextView
+            android:id="@+id/total_price_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price = "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+
+        android:layout_below="@id/rl2"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
         android:text="Please write your Shipment Details"
         android:textAlignment="center"
         android:textColor="@color/ColorrprimarydArk"

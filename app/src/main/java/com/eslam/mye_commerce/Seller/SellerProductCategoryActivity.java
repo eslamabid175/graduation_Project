@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.Seller;
 
 import android.content.Intent;
 import android.os.Bundle;

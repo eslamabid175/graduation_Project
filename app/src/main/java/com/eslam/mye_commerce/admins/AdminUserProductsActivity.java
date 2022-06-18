@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.admins;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.eslam.mye_commerce.Model.Cart;
+import com.eslam.mye_commerce.R;
 import com.eslam.mye_commerce.ViewHolder.CartViewHolder;
 import com.eslam.mye_commerce.databinding.ActivityAdminUserProductsBinding;
 import com.eslam.mye_commerce.databinding.ActivityAdminsNewOrdersBinding;

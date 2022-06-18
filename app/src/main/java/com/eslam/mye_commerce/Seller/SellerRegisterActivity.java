@@ -1,9 +1,8 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.Seller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -40,7 +39,7 @@ FirebaseAuth auth;
         binding.sellerAlreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(SellerRegisterActivity.this,SellerLoginActivity.class);
+                Intent intent=new Intent(SellerRegisterActivity.this, SellerLoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -88,7 +87,7 @@ rootref.child("Sellers").child(sid).updateChildren(sellermap).addOnCompleteListe
 
         Toast.makeText(SellerRegisterActivity.this, "U r regestir Succsfully", Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(SellerRegisterActivity.this,SellerHomeActivity.class);
+        Intent intent = new Intent(SellerRegisterActivity.this, SellerHomeActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();

@@ -15,11 +15,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.eslam.mye_commerce.SellerProductCategoryActivity;
 import com.eslam.mye_commerce.HomeActivity;
 import com.eslam.mye_commerce.Model.UserModel;
 import com.eslam.mye_commerce.R;
-import com.eslam.mye_commerce.ResetPasswordActivity;
 import com.eslam.mye_commerce.admins.AdminHomeActivity;
 import com.eslam.mye_commerce.loginandjoin.prevelant.Prevelant;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -151,7 +149,7 @@ public class LoginActivity extends AppCompatActivity {
                                 UserModel usersData = snapshot.child(auth.getUid()).getValue(UserModel.class);
 
                                 if (emialtxt.toString().equals(value.toString())) {
-                                   // Log.d(TAG, "emil3 is: " + emialtxt);
+                                    Log.d(TAG, "emil3 is: " + emialtxt);
                                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                                     Prevelant.currentOnlineUser = usersData;
                                     startActivity(intent);

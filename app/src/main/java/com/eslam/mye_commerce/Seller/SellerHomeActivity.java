@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.Seller;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -12,26 +12,23 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.eslam.mye_commerce.MainActivity;
 import com.eslam.mye_commerce.Model.Products;
-import com.eslam.mye_commerce.ViewHolder.ProductViewHolder;
+import com.eslam.mye_commerce.R;
 import com.eslam.mye_commerce.ViewHolder.SellerProductViewHolder;
-import com.eslam.mye_commerce.admins.CheckNewProductsActivity;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.eslam.mye_commerce.databinding.ActivitySellerHomeBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -59,20 +56,23 @@ private DatabaseReference reference;
                     startActivity(intentct);
                     return true;
                 case R.id.navigation_logout:
-                    final FirebaseAuth mAuth;
-                    mAuth = FirebaseAuth.getInstance();
-                    mAuth.signOut();
 
+final FirebaseAuth auth;
+auth=FirebaseAuth.getInstance();
+auth.signOut();
                     Intent intent = new Intent(SellerHomeActivity.this, MainActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                     finish();
                     return true;
-                default:
-                    throw new IllegalStateException("Unexpected value: " + item.getItemId());
-            }
+//                default:
+//                    throw new IllegalStateException("Unexpected value: " + item.getItemId());
+
         }
-    };
+        return false;
+    }};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,15 +99,17 @@ reference= FirebaseDatabase.getInstance().getReference().child("Products");
 
 
         FirebaseRecyclerOptions<Products>options=new FirebaseRecyclerOptions.Builder<Products>()
-                .setQuery(reference.orderByChild("sid").equalTo(FirebaseAuth.getInstance().getUid()),Products.class).build();
+                .setQuery(reference.orderByChild("Selleruid").equalTo(FirebaseAuth.getInstance()
+                        .getUid()),Products.class).build();
         FirebaseRecyclerAdapter<Products, SellerProductViewHolder> adapter=
                 new FirebaseRecyclerAdapter<Products, SellerProductViewHolder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull SellerProductViewHolder holder, @SuppressLint("RecyclerView") int position, @NonNull Products model) {
+                    protected void onBindViewHolder(@NonNull SellerProductViewHolder holder
+                            , @SuppressLint("RecyclerView") int position, @NonNull Products model) {
                         holder.txtProductName.setText(model.getPname());
                         holder.txtProductDescription.setText(model.getDescription());
                         holder.txtProductPrice.setText("Price : " + model.getPrice() + " $");
-                        holder.productState.setText(model.getProductState());
+                        holder.productState.setText("State : "+model.getProductState());
                         Picasso.get().load(model.getImage()).into(holder.imageView);
 
                         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -126,8 +128,8 @@ reference= FirebaseDatabase.getInstance().getReference().child("Products");
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                                        if(position==0){deleteProduct(productid);}
-                                        if(position==1){
+                                        if(i==0){deleteProduct(productid);}
+                                        if(i==1){
 
                                         }
                                     }
@@ -157,7 +159,12 @@ reference= FirebaseDatabase.getInstance().getReference().child("Products");
             public void onComplete(@NonNull Task<Void> task) {
                 Toast.makeText(SellerHomeActivity.this, "The item has deleted", Toast.LENGTH_SHORT).show();
             }
-        });
+        }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(SellerHomeActivity.this, "Error: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 }
 

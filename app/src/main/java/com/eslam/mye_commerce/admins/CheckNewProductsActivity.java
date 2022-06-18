@@ -22,6 +22,7 @@ import com.eslam.mye_commerce.databinding.ActivitySellerProductCategoryBinding;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -79,8 +80,8 @@ holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
-                if(position==0){changeProductState(productid);}
-                if(position==1){
+                if(i==0){changeProductState(productid);}
+                if(i==1){
 
                 }
             }
@@ -107,6 +108,11 @@ adapter.startListening();
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 Toast.makeText(CheckNewProductsActivity.this, "The item has approved", Toast.LENGTH_SHORT).show();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(CheckNewProductsActivity.this, "error : "+e.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }

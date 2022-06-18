@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.loginandjoin;
 
 import static android.content.ContentValues.TAG;
 
@@ -14,8 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.eslam.mye_commerce.HomeActivity;
 import com.eslam.mye_commerce.databinding.ActivityResetPasswordBinding;
-import com.eslam.mye_commerce.loginandjoin.LoginActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;

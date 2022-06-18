@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="15dp"
-    android:layout_marginTop="20dp"
-    android:layout_marginEnd="15dp"
-    app:cardElevation="15dp">
+    android:layout_margin="20dp"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="15dp"
+    android:background="#FFC5F3">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="#FFC5F3">
 
         <TextView
             android:id="@+id/product_seller_name"
@@ -25,7 +27,7 @@
         <ImageView
             android:id="@+id/product_seller_image"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="250dp"
             android:layout_below="@+id/product_seller_name"
             android:layout_marginTop="2dp"
             android:scaleType="centerCrop" />

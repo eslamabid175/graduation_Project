@@ -12,8 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.eslam.mye_commerce.SellerHomeActivity;
-import com.eslam.mye_commerce.SellerProductCategoryActivity;
+import com.eslam.mye_commerce.Seller.SellerHomeActivity;
 import com.eslam.mye_commerce.databinding.ActivitySellerAddNewProductsBinding;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;

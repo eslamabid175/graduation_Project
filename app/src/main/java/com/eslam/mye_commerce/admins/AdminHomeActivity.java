@@ -6,12 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.eslam.mye_commerce.AdminsNewOrdersActivity;
 import com.eslam.mye_commerce.HomeActivity;
 import com.eslam.mye_commerce.MainActivity;
-import com.eslam.mye_commerce.R;
 import com.eslam.mye_commerce.databinding.ActivityAdminHomeBinding;
-import com.eslam.mye_commerce.databinding.ActivitySellerRegisterBinding;
 
 public class AdminHomeActivity extends AppCompatActivity {
     private ActivityAdminHomeBinding binding;

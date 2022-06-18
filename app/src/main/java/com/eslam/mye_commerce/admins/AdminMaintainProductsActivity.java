@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.admins;
 
 import static android.content.ContentValues.TAG;
 
@@ -11,8 +11,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.eslam.mye_commerce.Seller.SellerProductCategoryActivity;
 import com.eslam.mye_commerce.databinding.ActivityAdminMaintainProductsBinding;
-import com.eslam.mye_commerce.databinding.ActivityProductDetailsBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;

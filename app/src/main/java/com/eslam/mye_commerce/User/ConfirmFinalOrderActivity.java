@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.User;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.eslam.mye_commerce.HomeActivity;
 import com.eslam.mye_commerce.databinding.ActivityConfirmFinalOrderBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -34,6 +35,7 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
 
         totlalamount = getIntent().getStringExtra("Total Price");
         Toast.makeText(this, "Total Price " + totlalamount + " $", Toast.LENGTH_SHORT).show();
+        binding.totalPriceConfirm.setText("Total Price = "+totlalamount+" $");
         Auth = FirebaseAuth.getInstance();
 
         binding.confirmFinalOrderBtn.setOnClickListener(new View.OnClickListener() {
@@ -98,8 +100,8 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(ConfirmFinalOrderActivity.this, "your final order has been placed successfully.", Toast.LENGTH_SHORT).show();
-
-                                        Intent intent = new Intent(ConfirmFinalOrderActivity.this, HomeActivity.class);
+                Intent intent = new Intent(ConfirmFinalOrderActivity.this, PaymentActivity.class);
+                                   intent.putExtra("amount",totlalamount);
                                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                         startActivity(intent);
                                         finish();

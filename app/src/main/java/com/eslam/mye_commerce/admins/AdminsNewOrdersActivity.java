@@ -1,4 +1,4 @@
-package com.eslam.mye_commerce;
+package com.eslam.mye_commerce.admins;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.eslam.mye_commerce.Model.AdminOrders;
+import com.eslam.mye_commerce.R;
 import com.eslam.mye_commerce.databinding.ActivityAdminsNewOrdersBinding;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;

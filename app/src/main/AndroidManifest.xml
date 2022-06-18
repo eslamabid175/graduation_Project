@@ -15,47 +15,50 @@
         android:theme="@style/Theme.MyECommerce"
         tools:replace="android:theme">
         <activity
+            android:name=".User.PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".admins.CheckNewProductsActivity"
             android:exported="false" />
         <activity
             android:name=".admins.AdminHomeActivity"
             android:exported="false" />
         <activity
-            android:name=".SellerHomeActivity"
+            android:name=".Seller.SellerHomeActivity"
             android:exported="false"
             android:label="@string/title_activity_seller_home" />
         <activity
-            android:name=".SellerLoginActivity"
+            android:name=".Seller.SellerLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SellerRegisterActivity"
+            android:name=".Seller.SellerRegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".ResetPasswordActivity"
+            android:name=".loginandjoin.ResetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminMaintainProductsActivity"
+            android:name=".admins.AdminMaintainProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchProductsActivity"
+            android:name=".Seller.SearchProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminUserProductsActivity"
+            android:name=".admins.AdminUserProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminsNewOrdersActivity"
+            android:name=".admins.AdminsNewOrdersActivity"
             android:exported="false" />
         <activity
-            android:name=".ConfirmFinalOrderActivity"
+            android:name=".User.ConfirmFinalOrderActivity"
             android:exported="false" />
         <activity
-            android:name=".CartActivity"
+            android:name=".User.CartActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductDetailsActivity"
+            android:name=".User.ProductDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".SettinsActivity"
+            android:name=".User.SettinsActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
@@ -63,7 +66,7 @@
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.MyECommerce.NoActionBar" />
         <activity
-            android:name=".SellerProductCategoryActivity"
+            android:name=".Seller.SellerProductCategoryActivity"
             android:exported="false" />
         <activity
             android:name=".admins.SellerAddNewProductsActivity"
@@ -83,6 +86,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_0CUEIMpkUEDuLf"
+
+            />
     </application>
 
 </manifest>

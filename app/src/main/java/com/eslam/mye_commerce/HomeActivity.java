@@ -1,10 +1,7 @@
 package com.eslam.mye_commerce;
 
-import static android.content.ContentValues.TAG;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,7 +19,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.eslam.mye_commerce.Model.Products;
+import com.eslam.mye_commerce.Seller.SearchProductsActivity;
+import com.eslam.mye_commerce.User.CartActivity;
+import com.eslam.mye_commerce.User.ProductDetailsActivity;
+import com.eslam.mye_commerce.User.SettinsActivity;
 import com.eslam.mye_commerce.ViewHolder.ProductViewHolder;
+import com.eslam.mye_commerce.admins.AdminMaintainProductsActivity;
 import com.eslam.mye_commerce.loginandjoin.prevelant.Prevelant;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -34,7 +36,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.database.core.Tag;
 import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.CircleImageView;
