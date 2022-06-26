@@ -110,7 +110,8 @@
         android:text="add To Cart"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="19sp" />
+        android:textSize="19sp"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/buy_now_btn"
@@ -124,9 +125,11 @@
         android:background="@drawable/buttons"
         android:padding="10dp"
         android:text="Buy Now"
+
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="19sp" />
+        android:textSize="19sp"
+        android:visibility="gone" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_to_cart_btn"

@@ -111,8 +111,9 @@ public class HomeActivity extends AppCompatActivity
      public void onDataChange(@NonNull DataSnapshot snapshot) {
         if (snapshot.exists()){
             String im=snapshot.child("image").getValue().toString();
+            String nm=snapshot.child("name").getValue().toString();
             if (!type.equals("Admin")) {
-                userNameTextView.setText(Prevelant.currentOnlineUser.getName());
+                userNameTextView.setText(nm);
                 Picasso.get().load(im).placeholder(R.drawable.profile).into(profileImageView);
             }
         }

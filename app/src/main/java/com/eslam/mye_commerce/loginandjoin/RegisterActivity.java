@@ -64,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
-        dminconfirm.setVisibility(View.VISIBLE);
+        //dminconfirm.setVisibility(View.VISIBLE);
 
 
         create_account_btn.setOnClickListener(new View.OnClickListener() {

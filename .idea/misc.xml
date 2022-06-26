@@ -31,6 +31,7 @@
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/layout/app_bar_home.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/layout/content_home.xml" value="0.1" />
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/layout/fragment_home.xml" value="0.147265625" />
+        <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/layout/fragment_slideshow.xml" value="0.147265625" />
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/layout/mycart_item.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/layout/nav_header_home.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/layout/order_item.xml" value="0.19635416666666666" />
@@ -39,6 +40,7 @@
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/menu/activity_main_drawer.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/menu/home.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/hp/Desktop/android-apps/MyECommerce/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1165" />
       </map>
     </option>
   </component>
