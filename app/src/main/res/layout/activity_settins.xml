@@ -112,6 +112,7 @@
         android:background="@color/Colorrprimary"
         android:padding="10dp"
         android:text="Set Security Questions"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        tools:visibility="gone" />
 
 </RelativeLayout>
