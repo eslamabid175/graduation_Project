@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".admins.CheckNewProductsActivity">
 
 
@@ -20,14 +21,15 @@
             android:layout_marginTop="10dp"
             android:text="Approve New Products"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="25dp" />
 
     </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/check_and_abrove_products_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-android:id="@+id/check_and_abrove_products_recycler"
         android:layout_below="@+id/r2"
 
         />

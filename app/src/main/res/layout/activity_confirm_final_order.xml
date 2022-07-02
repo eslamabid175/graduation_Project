@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".User.ConfirmFinalOrderActivity">
+
     <RelativeLayout
         android:id="@+id/rl2"
         android:layout_width="match_parent"
@@ -17,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="Total Price = "
             android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
     </RelativeLayout>
@@ -46,7 +48,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
         android:layout_marginRight="20dp"
-        android:hint="your Name" />
+        android:background="@drawable/inputs_design"
+        android:hint="your Name"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/shippment_email"
@@ -54,10 +60,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/shippment_name"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
+        android:background="@drawable/inputs_design"
         android:hint="your Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/shippment_address"
@@ -65,9 +75,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/shippment_email"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
-        android:hint="your Home Address" />
+        android:background="@drawable/inputs_design"
+        android:hint="your Home Address"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/shippment_city"
@@ -75,9 +89,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/shippment_address"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
-        android:hint="your City Name" />
+        android:background="@drawable/inputs_design"
+        android:hint="your City Name"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
 
     <Button
@@ -85,10 +103,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/ColorrprimarydArk"
         android:text="Confirm"
-        android:textColor="@android:color/white"
+        android:textColor="@color/black"
         android:textSize="20dp" />
 
 </RelativeLayout>

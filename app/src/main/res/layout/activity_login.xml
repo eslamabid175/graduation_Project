@@ -7,20 +7,20 @@
     android:background="@drawable/login"
     tools:context=".loginandjoin.LoginActivity">
 
-    <ImageView
-        android:id="@+id/login_app_logo"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/applogo" />
+    <!--    <ImageView-->
+    <!--        android:id="@+id/login_app_logo"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:src="@drawable/applogo" />-->
 
     <EditText
         android:id="@+id/login_emil_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login_app_logo"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="220dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/inputs_design"
         android:hint="Emial"
@@ -75,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:text="Forget Password"
+            android:text="Forget Password?"
             android:textAlignment="viewEnd"
 
             android:textColor="@color/Colorrprimary"
@@ -96,7 +96,7 @@
         android:padding="17dp"
         android:text="Login"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <TextView

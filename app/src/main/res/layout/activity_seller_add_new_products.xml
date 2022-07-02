@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".admins.SellerAddNewProductsActivity">
 
     <ImageView
@@ -27,7 +28,9 @@
         android:background="@drawable/inputs_design"
         android:hint="Product Name...."
         android:inputType="textMultiLine"
-        android:padding="20dp" />
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/product_description"
@@ -40,7 +43,9 @@
         android:background="@drawable/inputs_design"
         android:hint="Product Description...."
         android:inputType="textMultiLine"
-        android:padding="20dp" />
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/product_price"
@@ -53,7 +58,9 @@
         android:background="@drawable/inputs_design"
         android:hint="Product Price...."
         android:inputType="textMultiLine"
-        android:padding="20dp" />
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <Button
         android:id="@+id/add_new_product"
@@ -67,7 +74,7 @@
         android:padding="17dp"
         android:text="Add Product"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
 </RelativeLayout>

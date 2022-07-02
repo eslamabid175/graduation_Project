@@ -11,8 +11,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp"
-        android:background="#FFC5F3">
+        android:background="@color/ColorrprimarydArk"
+        android:padding="5dp">
 
         <TextView
             android:id="@+id/product_seller_name"
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="Product Name"
             android:textAlignment="center"
-            android:textColor="@color/Colorrprimary"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
             android:layout_below="@+id/product_seller_image"
             android:text="Product Price"
             android:textAlignment="center"
-            android:textColor="@color/ColorrprimarydArk"
+            android:textColor="@color/black"
             android:textSize="18dp" />
 
         <TextView
@@ -50,7 +50,7 @@
             android:layout_marginTop="2dp"
             android:text="Product Description"
             android:textAlignment="center"
-            android:textColor="@color/ColorrprimarydArk"
+            android:textColor="@color/black"
             android:textSize="16dp" />
 
         <TextView
@@ -61,7 +61,7 @@
             android:layout_marginTop="2dp"
             android:text="Product State"
             android:textAlignment="center"
-            android:textColor="@color/ColorrprimarydArk"
+            android:textColor="@color/black"
             android:textSize="16dp" />
 
     </RelativeLayout>

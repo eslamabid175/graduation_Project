@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Seller.SearchProductsActivity">
 
     <RelativeLayout
         android:id="@+id/r5"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/ColorrprimarydArk"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:background="@color/ColorrprimarydArk">
 
         <com.rey.material.widget.EditText
             android:id="@+id/search_product_name"
@@ -32,25 +32,23 @@
             android:id="@+id/search_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@+id/search_product_name"
             android:background="@color/ColorrprimarydArk"
-            android:layout_alignParentRight="true"
             android:padding="9dp"
             android:text="Search"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold" />
 
     </RelativeLayout>
 
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/search_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/r5">
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_below="@+id/r5"></androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>

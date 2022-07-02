@@ -4,16 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="20dp"
+    android:background="@color/ColorrprimarydArk"
     app:cardCornerRadius="50dp"
-    app:cardElevation="15dp"
-    android:background="#FFC5F3"
-    >
+    app:cardElevation="15dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/ColorrprimarydArk"
         android:padding="5dp"
-        android:background="#FFC5F3"
 
         >
 
@@ -23,7 +22,7 @@
             android:layout_height="wrap_content"
             android:text="Product Name"
             android:textAlignment="center"
-            android:textColor="@color/Colorrprimary"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -44,7 +43,7 @@
             android:layout_below="@+id/product_image"
             android:text="Product Price"
             android:textAlignment="center"
-            android:textColor="@color/ColorrprimarydArk"
+            android:textColor="@color/black"
             android:textSize="18dp" />
 
         <RatingBar
@@ -56,6 +55,7 @@
 
             android:layout_centerInParent="true"
             android:rating="3.5" />
+
         <TextView
             android:id="@+id/product_description"
             android:layout_width="match_parent"
@@ -64,7 +64,7 @@
             android:layout_marginTop="2dp"
             android:text="Product Description"
             android:textAlignment="center"
-            android:textColor="@color/ColorrprimarydArk"
+            android:textColor="@color/black"
             android:textSize="16dp" />
 
     </RelativeLayout>

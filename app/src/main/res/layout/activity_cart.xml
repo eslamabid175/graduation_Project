@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".User.CartActivity">
 
     <RelativeLayout
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="My Cart"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
     </RelativeLayout>
@@ -52,7 +53,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/ColorrprimarydArk"
         android:text="Next"
-        android:textColor="@android:color/white"
+        android:textColor="@color/black"
         android:textSize="20dp" />
 
 </RelativeLayout>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/black">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
             android:text="UserName"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold" />
 
@@ -28,7 +29,7 @@
             android:layout_marginRight="2dp"
             android:text="Email address"
             android:textAlignment="viewEnd"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold" />
 
@@ -40,7 +41,7 @@
             android:layout_marginTop="45dp"
             android:gravity="center"
             android:text="Total Price"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold" />
 
@@ -52,7 +53,7 @@
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="Address, City"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold" />
 
@@ -64,7 +65,7 @@
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="Date Time"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold" />
 
@@ -80,7 +81,7 @@
             android:background="@android:color/white"
             android:text="Show This Order Products"
             android:textAllCaps="false"
-            android:textColor="@color/ColorrprimarydArk"
+            android:textColor="@color/black"
             android:textSize="15dp" />
 
     </RelativeLayout>

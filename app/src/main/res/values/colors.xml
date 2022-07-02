@@ -7,7 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="Colorrprimary">#BF007A</color>
-    <color name="ColorrprimarydArk">#BF007A</color>
+    <color name="Colorrprimary">#FFEB3B</color>
+    <color name="ColorrprimarydArk">#F3DB0C</color>
     <color name="ColorrAccent">#FF4081</color>
 </resources>
